@@ -50,18 +50,21 @@ public class Movement : MonoBehaviour
     {
         float rotationInput = rotation.ReadValue<float>();
 
-        if (Mathf.Abs(rotationInput) > 0.01f)
+        if (rotationInput < 0)
         {
-            // Fizikten gelen donmeyi durdur
-            rb.angularVelocity = Vector3.zero;
-
-            // Manuel donme
-            rb.AddRelativeTorque(
-                Vector3.forward * -rotationInput * rotationStrength,
-                ForceMode.Acceleration
-            );
+            Rotate(rotationStrength);
         }
-        // else: hicbir sey yapma  fizik devam etsin
+        else if (rotationInput > 0)
+        {
+            Rotate(-rotationStrength);
+        }
+    }
+
+    private void Rotate(float rotationThisFrame)
+    {
+        rb.freezeRotation = true;
+        transform.Rotate(Vector3.forward * rotationThisFrame * Time.fixedDeltaTime);
+        rb.freezeRotation = false;
     }
 }
 
