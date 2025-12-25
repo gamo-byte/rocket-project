@@ -25,21 +25,22 @@ public class CollisionHandler : MonoBehaviour
     {
         //todo add particles and sfx
         GetComponent<Movement>().enabled = false;
-        Invoke("LoadNextLevel", levelLoadDelay);
+        Invoke("LoadNextLevel",levelLoadDelay);
     }
 
     private void StartCrashSequence()
     {
         //todo add particles and sfx
         GetComponent<Movement>().enabled = false;
-        Invoke("ReloadLevel", levelLoadDelay);
+        Invoke("ReloadLevel",levelLoadDelay);
     }
 
     private void LoadNextLevel()
         {
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             int nextSceneIndex = currentSceneIndex + 1;
-            if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+            SceneManager.LoadScene(nextSceneIndex);
+        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
             {
                 ReturnToFirstLevel();
             }
