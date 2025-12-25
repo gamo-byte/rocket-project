@@ -805,6 +805,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1165810036994959248, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
+      propertyPath: crashSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 040ee3ed9f6669d41b39c68590c55e77, type: 3}
+    - target: {fileID: 1165810036994959248, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
+      propertyPath: successSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0284971c254f2cc40bad2a81c6739262, type: 3}
     - target: {fileID: 2766098274953440254, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.47
@@ -848,6 +856,14 @@ PrefabInstance:
     - target: {fileID: 6327174558330630822, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
       propertyPath: m_Name
       value: Player Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393260824475731835, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
+      propertyPath: thrustSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d58da10e33d3f434d93a40e028cb8bad, type: 3}
+    - target: {fileID: 7439782031044124378, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
+      propertyPath: m_Resource
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
