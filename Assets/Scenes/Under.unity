@@ -396,6 +396,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &332396831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332396822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa9147c98b34fe49917b00aec83a369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,6 +737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Landing Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 5517725744829261298, guid: 9f3179ac8e1677440a26b5add03a0763, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -852,7 +868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1217501693687840928, guid: 024ad199abb103345bc5f4d3f588373b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.29
+      value: 10.83
       objectReference: {fileID: 0}
     - target: {fileID: 1217501693687840928, guid: 024ad199abb103345bc5f4d3f588373b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -978,6 +994,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6327174558330630822, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 332396827}
+    - targetCorrespondingSourceObject: {fileID: 6327174558330630822, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 332396831}
   m_SourcePrefab: {fileID: 100100000, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
 --- !u!1001 &5320311233387802833
 PrefabInstance:
@@ -1030,6 +1049,10 @@ PrefabInstance:
     - target: {fileID: 5517725744829261298, guid: 9f3179ac8e1677440a26b5add03a0763, type: 3}
       propertyPath: m_Name
       value: Launch Pad
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517725744829261298, guid: 9f3179ac8e1677440a26b5add03a0763, type: 3}
+      propertyPath: m_TagString
+      value: Friendly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
