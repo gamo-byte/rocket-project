@@ -1,14 +1,17 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 2f;
     [SerializeField] AudioClip successSound;
     [SerializeField] AudioClip crashSound;
+    [SerializeField] ParticleSystem successParticles;
+    [SerializeField] ParticleSystem crashParticles;
 
     private AudioSource audioSource;
+
+    bool isControllable = true;
 
     private void Start()
     {
@@ -16,6 +19,8 @@ public class CollisionHandler : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
+        if (!isControllable) { return; }
+
         switch (other.gameObject.tag)
         {
             case "Friendly":
@@ -30,19 +35,27 @@ public class CollisionHandler : MonoBehaviour
         }
     }
 
+    private void StopMovement()
+        {
+        isControllable = false;
+        GetComponent<Movement>().enabled = false;
+    }
+
     private void StartSuccessSequence()
     {
-        //todo add particles
+        StopMovement();
+        audioSource.Stop();
         audioSource.PlayOneShot(successSound);
-        GetComponent<Movement>().enabled = false;
+        successParticles.Play();
         Invoke("LoadNextLevel",levelLoadDelay);
     }
 
     private void StartCrashSequence()
     {
-        //todo add particles
+        StopMovement();
+        audioSource.Stop();
         audioSource.PlayOneShot(crashSound);
-        GetComponent<Movement>().enabled = false;
+        crashParticles.Play();
         Invoke("ReloadLevel",levelLoadDelay);
     }
 

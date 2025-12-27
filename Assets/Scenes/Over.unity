@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: b19228ac9137f7d4895c504211fa4b79, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -207,7 +207,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: -0.081175625, y: -0.03288781, z: 0.0026799508, w: -0.99615353}
-  m_LocalPosition: {x: -11.446313, y: 5.8885455, z: -14.769866}
+  m_LocalPosition: {x: -11.446313, y: 8.948546, z: -14.769867}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -323,7 +323,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 0.9
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -516,7 +516,7 @@ Transform:
   m_GameObject: {fileID: 668997906}
   serializedVersion: 2
   m_LocalRotation: {x: -0.081175625, y: -0.03288781, z: 0.0026799508, w: -0.99615353}
-  m_LocalPosition: {x: -11.446313, y: 5.8885455, z: -14.769866}
+  m_LocalPosition: {x: -11.446313, y: 8.948546, z: -14.769867}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -805,21 +805,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1165810036994959248, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
-      propertyPath: crashSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 040ee3ed9f6669d41b39c68590c55e77, type: 3}
-    - target: {fileID: 1165810036994959248, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
-      propertyPath: successSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 0284971c254f2cc40bad2a81c6739262, type: 3}
     - target: {fileID: 2766098274953440254, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.47
       objectReference: {fileID: 0}
     - target: {fileID: 2766098274953440254, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.96
+      value: 6.02
       objectReference: {fileID: 0}
     - target: {fileID: 2766098274953440254, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -856,14 +848,6 @@ PrefabInstance:
     - target: {fileID: 6327174558330630822, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
       propertyPath: m_Name
       value: Player Rocket
-      objectReference: {fileID: 0}
-    - target: {fileID: 7393260824475731835, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
-      propertyPath: thrustSound
-      value: 
-      objectReference: {fileID: 8300000, guid: d58da10e33d3f434d93a40e028cb8bad, type: 3}
-    - target: {fileID: 7439782031044124378, guid: c72cdfc4713b966419018b2a3011083e, type: 3}
-      propertyPath: m_Resource
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
