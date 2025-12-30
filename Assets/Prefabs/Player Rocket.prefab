@@ -136,8 +136,8 @@ MonoBehaviour:
       m_Action: Rotation
       m_Flags: 8
     m_Flags: 0
-  thrustStrength: 1000
-  rotationStrength: 100
+  thrustStrength: 2100
+  rotationStrength: 130
   thrustSound: {fileID: 8300000, guid: d58da10e33d3f434d93a40e028cb8bad, type: 3}
   mainBoosterParticles: {fileID: 4111045750923175782}
   leftBoosterParticles: {fileID: 516654363726684732}
