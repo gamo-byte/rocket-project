@@ -15,7 +15,6 @@ public class Oscillator : MonoBehaviour
         endPosition = startPosition + movementVector;
     }
 
-    // Update is called once per frame
     void Update()
     {
         movementFactor = Mathf.PingPong(Time.time * speed, 1f);
